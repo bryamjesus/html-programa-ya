@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 /* p {
@@ -84,7 +84,7 @@ a {
   /* max-width: 1400px;
   width: 90%; */
   width: min(95%, 1200px);
-  margin: 0 auto;
+  margin: auto;
 }
 
 /**************************************
@@ -214,7 +214,7 @@ Somos pro ya
 
 .somosproya__container {
   text-align: center;
-  padding: 200px 0;
+  padding: 200px 12px;
 }
 
 .somosproya__titulo {
@@ -255,7 +255,7 @@ Somos pro ya
   }
 
   .somosproya__parrafo {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .somosproya__img {
@@ -269,5 +269,96 @@ Somos pro ya
     background-position: center center;
     height: 600px;
     width: 50%;
+  }
+}
+
+/**************************************
+Programas
+***************************************/
+.programas {
+  background-color: rgb(30, 30, 30);
+  color: var(--colorFuente);
+  text-align: center;
+}
+
+.programas__container {
+  padding: 100px 0;
+}
+
+.programas__titulo {
+  font-size: 3.2em;
+}
+
+.carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/frontend.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/fullstack.jpg");
+}
+
+.carta:last-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/python.jpg");
+}
+
+.carta__parrafo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cartas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .carta__parrafo {
+    font-size: 1.25em;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .programas__titulo {
+    font-size: 4em;
+  }
+
+  .carta__titulo {
+    margin-bottom: 50px;
+  }
+
+  .carta {
+    padding: 15px;
+    background-size: 100% 120px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .cartas__button{
+      padding: var(--paddingButtonPhone);
   }
 }
