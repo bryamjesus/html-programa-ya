@@ -75,6 +75,11 @@ a {
   text-transform: uppercase;
 }
 
+.button-dos {
+  background-color: var(--colorPrincipal);
+  color: var(--colorFuente);
+}
+
 /* .button:hover {
   color: var(--colorFuente);
   background-color: var(--colorSecundario);
@@ -173,7 +178,7 @@ HEADER
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
   /* centrar */
   display: flex;
   align-items: center;
@@ -358,5 +363,93 @@ Programas
 
   .cartas__button {
     padding: var(--paddingButtonPhone);
+  }
+}
+
+/**************************************
+CARACTERISTICAS
+***************************************/
+
+.caracteristicas__container {
+  text-align: center;
+  padding: 200px 0;
+}
+
+.caracteristicas__ul li {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .caracteristicas {
+    background-image: url("../img/fullstack.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+  }
+
+  .caracteristicas__container {
+    text-align: initial;
+  }
+
+  .caracteristicas__ul {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
+}
+
+/**************************************
+FINAL
+***************************************/
+.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--colorSecundario);
+  color: var(--colorFuente);
+  height: 80vh;
+}
+
+.final__titulo {
+  font-size: 9vw;
+}
+
+@media (min-width: 768px) {
+  .final__titulo {
+    font-size: 3em;
+  }
+  /* .button{
+    font-size: 3em;
+  } */
+}
+
+/**************************************
+FOOTER
+***************************************/
+.footer {
+  background-color: #fefefe;
+}
+
+.footer__container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copy {
+  color: rgb(100, 100, 100);
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    justify-content: flex-end;
   }
 }
